@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+/* =================================
+   ADMITLY MIDNIGHT CAMPUS THEME
+================================= */
+
+:root {
+  font-family: 'Manrope', sans-serif;
+  color: #F3F4EE;
+  background: #0B1220;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100%;
+}
+
+body {
+  background: #0B1220;
+  color: #F3F4EE;
+}
+
+/* Typography */
+
+.display-font {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.mono-font {
+  font-family: 'DM Mono', monospace;
+}
+
+/* Authentication inputs */
+
+.auth-input {
+  width: 100%;
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 12px;
+  padding: 14px 16px;
+  outline: none;
+  background: #1B2A40;
+  color: #F3F4EE;
+  transition: .2s;
+}
+
+.auth-input::placeholder {
+  color: #94A3B8;
+}
+
+.auth-input:focus {
+  border-color: #C6F36B;
+  box-shadow: 0 0 0 3px rgba(198,243,107,.12);
+}
+
+/* Glass panels */
+
+.glass {
+  background: rgba(255,255,255,.045);
+  border: 1px solid rgba(255,255,255,.10);
+  backdrop-filter: blur(18px);
+}
+
+/* Primary button */
+
+.lime-button {
+  background: #C6F36B;
+  color: #0B1220;
+  border-radius: 12px;
+  font-weight: 800;
+  padding: 15px 20px;
+  transition: .2s;
+}
+
+.lime-button:hover {
+  background: #D7FF91;
+  transform: translateY(-2px);
+}
+
+/* Campus grid background */
+
+.campus-grid {
+  background-color: #121D2E;
+  background-image:
+    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+  background-size: 38px 38px;
+}
+
+/* Entrance animation */
+
+.animate-appear {
+  animation: appear .6s ease-out;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Floating graduation icon */
+
+.float-animation {
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
