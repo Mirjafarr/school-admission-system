@@ -9,7 +9,7 @@ import {
   RefreshCw, Search, School, AlertCircle, Download
 } from 'lucide-react'
 
-const API = 'http://localhost:5069'
+const API = import.meta.env.VITE_API_URL || 'http://localhost:5069'
 
 type Summary = {
   totalClasses: number

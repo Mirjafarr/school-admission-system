@@ -1,0 +1,10 @@
+.git
+.gitignore
+**/bin/
+**/obj/
+**/node_modules/
+**/dist/
+.env
+.env.*
+**/appsettings.Development.json
+PasswordResetTool/
